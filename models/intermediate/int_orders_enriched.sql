@@ -3,7 +3,7 @@ with orders as (
 ),
 
 customers as (
-    select * from {{ ref('stg_customers') }}
+    select * from {{ ref('stg_customer') }}
 ),
 
 order_items as (
