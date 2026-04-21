@@ -1,5 +1,5 @@
 with customer as (
-    select * from {{ref('stg_customer')}}
+    select * from {{ref('stg_customers')}}
 )
 order_summary as(
     select
