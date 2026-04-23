@@ -16,9 +16,18 @@ models:
     staging:
       +schema: STAGING
       +materialized: view
+    staging_v2:
+      +schema: STAGING_V2
+      +materialized: view
     intermediate:
       +schema: INTERMEDIATE
       +materialized: view
+    intermediate_v2:
+      +schema: INTERMEDIATE_V2
+      +materialized: view
     marts:
       +schema: MARTS
+      +materialized: table
+    marts_v2:
+      +schema: MARTS_V2
       +materialized: table
