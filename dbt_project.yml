@@ -31,3 +31,16 @@ models:
     marts_v2:
       +schema: MARTS_V2
       +materialized: table
+    marketing:
+      staging:
+        +schema: STAGING
+        +materialized: view
+        +database: MARKETING_DB
+      intermediate:
+        +schema: INTERMEDIATE
+        +materialized: view
+        +database: MARKETING_DB
+      marts:
+        +schema: MARTS
+        +materialized: table
+        +database: MARKETING_DB

@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: fct_campaign_performance
+    columns:
+      - name: campaign_id
+        tests:
+          - unique
+          - not_null
+      - name: channel
+        tests:
+          - not_null
+      - name: campaign_date
+        tests:
+          - not_null
+        
+  - name: dim_channels
+    columns:
+      - name: channel
+        tests:
+          - unique
+          - not_null
+  
+  - name: dim_segments
+    columns:
+      - name: customer_segment
+        tests:
+          - not_null
+          
+          
+          
+           
+          
+          
+          

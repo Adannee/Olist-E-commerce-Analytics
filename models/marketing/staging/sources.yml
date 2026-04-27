@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: marketing_raw
+    database: MARKETING_DB
+    schema: RAW
+    tables:
+      - name: MARKETING_CAMPAIGNS
